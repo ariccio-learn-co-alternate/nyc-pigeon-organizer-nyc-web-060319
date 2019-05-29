@@ -12,4 +12,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  data.gender.each do |gender, pigeons_list|
+    pigeons_list.each do |pigeon_name|
+  end
 end
