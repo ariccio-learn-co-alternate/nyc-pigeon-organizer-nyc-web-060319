@@ -3,6 +3,6 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.color.purple.each do |pigeon_name|
     if pigeon_list.has_key?(pigeon_name)
-      pigeon_list[pigeon_name]
+      pigeon_list[pigeon_name][color] = 
   end
 end
