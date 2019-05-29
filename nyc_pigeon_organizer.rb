@@ -12,11 +12,10 @@ def nyc_pigeon_organizer(data)
   end
   data.gender.each do |gender, pigeons_list|
     pigeons_list.each do |pigeon_name|
-      if pigeon_list_out.has_key?(pigeon_name)
-        pigeon_list_out[pigeon_name][:gender] = gender
-      else
-        pigeon_list_out[pigeon_name]
-      end
+      pigeon_list_out[pigeon_name][:gender] = gender
     end
+  end
+  data.lives.each do |location, pigeons_list|
+    pigeons_list.each do |pigeon_name|
   end
 end
