@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
   end
   data[:gender].each do |gender, pigeons_list|
     pigeons_list.each do |pigeon_name|
-      pigeon_list_out[pigeon_name][:gender] = gender.to_s
+      pigeon_list_out[pigeon_name][:gender] = [gender.to_s]
     end
   end
   data[:lives].each do |location, pigeons_list|
