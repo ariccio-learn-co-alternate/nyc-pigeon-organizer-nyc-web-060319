@@ -17,10 +17,10 @@ def nyc_pigeon_organizer(data)
   end
   data.lives.each do |location, pigeons_list|
     pigeons_list.each do |pigeon_name|
-      if pigeon_list_out.has_key?(pigeon_name)
-        
+      if pigeon_list_out[pigeon_name].has_key?(:lives)
+        pigeon_list_out[pigeon_name][:lives] << location
       else
-        
+        pigeon_list_out
       end
     end
   end
