@@ -5,6 +5,10 @@ def nyc_pigeon_organizer(data)
     if pigeon_list.has_key?(pigeon_name)
       pigeon_list[pigeon_name][color] << purple
     else
-      pigeon_list[pigeon_name] = 
+      pigeon_list[pigeon_name] = {
+        :color => ["purple"],
+        :gender => ["male"],
+        :lives
+      }
   end
 end
