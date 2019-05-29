@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
       if pigeon_list_out[pigeon_name].has_key?(:lives)
         pigeon_list_out[pigeon_name][:lives] << location
       else
-        pigeon_list_out
+        pigeon_list_out[pigeon_name][:lives] = [location]
       end
     end
   end
